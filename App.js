@@ -1,14 +1,11 @@
 import React from 'react';
 import { View, Text, SafeAreaView } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import RotasTelas from './components/Routes';
+import FirebaseApp from './src/FirebaseApp';
 
 
 const App = () => {
   return (
-    <SafeAreaProvider>
-      <RotasTelas></RotasTelas>
-    </SafeAreaProvider>
+    <FirebaseApp></FirebaseApp>
   );
 };
 
