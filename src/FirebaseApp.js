@@ -18,6 +18,10 @@ export class FirebaseApp extends Component {
         this.listAlunos()
     }
 
+    componentDidUpdate() {
+        this.listAlunos()
+    }
+
     listAlunos = () => {
         firestore()
             .collection('alunos')
@@ -92,9 +96,6 @@ export class FirebaseApp extends Component {
                     <Text style={style.title}>
                         Students
                     </Text>
-                    <ButtonEdit action={() => { this.listAlunos() }}>
-                        Update
-                    </ButtonEdit>
                 </CardItem>
 
                 <CardItem>
