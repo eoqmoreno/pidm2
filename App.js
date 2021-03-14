@@ -1,11 +1,13 @@
 import React from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
-import FirebaseApp from './src/FirebaseApp';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Routes from './src/components/Routes';
 
 
 const App = () => {
   return (
-    <FirebaseApp></FirebaseApp>
+    <SafeAreaProvider>
+      <Routes></Routes>
+    </SafeAreaProvider>
   );
 };
 
